@@ -90,12 +90,12 @@ const Jankenpon = () => {
 					</div>
 					<h2 className="text-xl font-bold text-green-600 mt-2">{result}</h2>
 
-					<button
+					<Button
 						onClick={resetGame}
 						className="mt-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
 					>
 						Main Lagi
-					</button>
+					</Button>
 				</div>
 			)}
 		</section>
