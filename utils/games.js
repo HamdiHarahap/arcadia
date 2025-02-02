@@ -13,6 +13,13 @@ const games = [
 		description: 'A game of X and O',
 		image: 'assets/images/tic-tac-toe.png',
 	},
+	{
+		id: 3,
+		name: 'Reaction Time Test',
+		slug: 'reaction-time-test',
+		description: 'A game to test your reaction time.',
+		image: 'assets/images/traffic.png',
+	},
 ]
 
 export default games

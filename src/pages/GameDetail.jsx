@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import games from '../../utils/games'
 import Jankenpon from '../components/layouts/Games/Jankenpon'
 import TicTacToe from '../components/layouts/Games/TicTacToe'
+import Reaction from '../components/layouts/Games/Reaction'
 
 const GameDetail = () => {
 	const { slug } = useParams()
@@ -19,6 +20,8 @@ const GameDetail = () => {
 				return <Jankenpon />
 			case 'tic tac toe':
 				return <TicTacToe />
+			case 'reaction time test':
+				return <Reaction />
 			default:
 				return <p>Game tidak ada</p>
 		}
