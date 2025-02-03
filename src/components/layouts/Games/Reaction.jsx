@@ -43,7 +43,7 @@ const Reaction = () => {
 	}
 
 	return (
-		<section className="bg-white text-black flex flex-col items-center h-[70vh] w-[40rem] rounded-lg m-auto py-6 mt-24 px-5 gap-6">
+		<section className="bg-white text-black flex flex-col items-center h-[70vh] w-[40rem] rounded-lg m-auto py-6 mt-24 px-5 gap-6 max-[520px]:w-full ">
 			<div className="w-full">
 				<Button className="mr-auto text-blue-500">
 					<Link to={`/`}>Back</Link>
@@ -59,7 +59,7 @@ const Reaction = () => {
 					lampu === 'red' ? 'bg-red-500' : 'bg-green-500'
 				}`}
 			></div>
-			<div className="text-xl mt-4">
+			<div className="text-xl">
 				{waktuReaksi !== null &&
 					(typeof waktuReaksi === 'string'
 						? waktuReaksi
@@ -68,7 +68,7 @@ const Reaction = () => {
 			{sudahKlik && (
 				<Button
 					onClick={resetGame}
-					className="mt-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+					className=" bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
 				>
 					Main Lagi
 				</Button>

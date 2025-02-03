@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 	return (
-		<section className="flex gap-8 flex-col px-52 py-12 items-center justify-center">
+		<section className="flex gap-8 flex-col px-52 py-12 items-center justify-center max-[520px]:px-4">
 			<div className="flex flex-col gap-3 items-center">
 				<h1 className="font-bold text-3xl">ARCADIA</h1>
 				<p className="font-semibold">Play the game</p>
 			</div>
-			<div className="grid grid-cols-3 gap-10">
+			<div className="grid grid-cols-3 gap-10 max-[520px]:grid-cols-1">
 				{games.map((game, index) => (
 					<div
 						key={index}

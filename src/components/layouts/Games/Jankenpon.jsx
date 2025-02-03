@@ -40,7 +40,7 @@ const Jankenpon = () => {
 	}
 
 	return (
-		<section className="bg-white text-black flex flex-col items-center h-[70vh] w-[40rem] gap-12 rounded-lg m-auto py-6 mt-24 px-5">
+		<section className="bg-white text-black flex flex-col items-center h-[70vh] w-[40rem] gap-12 rounded-lg m-auto py-6 mt-24 px-5 max-[520px]:w-full">
 			<div className="w-full">
 				<Button className="mr-auto text-blue-500">
 					<Link to={`/`}>Back</Link>
