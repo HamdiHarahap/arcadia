@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Square from '../../element/Square'
 import Button from '../../element/Button'
 
 const Board = () => {
@@ -77,19 +76,55 @@ const Board = () => {
 		<div className="flex flex-col   ">
 			<div>
 				<div className="flex">
-					<Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-					<Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-					<Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[0]}
+						onClick={() => handleClick(0)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[1]}
+						onClick={() => handleClick(1)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[2]}
+						onClick={() => handleClick(2)}
+					/>
 				</div>
 				<div className="flex">
-					<Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-					<Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-					<Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[3]}
+						onClick={() => handleClick(3)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[4]}
+						onClick={() => handleClick(4)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[5]}
+						onClick={() => handleClick(5)}
+					/>
 				</div>
 				<div className="flex">
-					<Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-					<Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-					<Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[6]}
+						onClick={() => handleClick(6)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[7]}
+						onClick={() => handleClick(7)}
+					/>
+					<Button
+						className="border-2 border-black w-12 h-12 font-bold text-lg"
+						value={squares[8]}
+						onClick={() => handleClick(8)}
+					/>
 				</div>
 			</div>
 			{gameOver ? (
